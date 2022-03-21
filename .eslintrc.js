@@ -2,11 +2,11 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true,
+    node: true
   },
   parserOptions: {
     parser: '@babel/eslint-parser',
-    requireConfigFile: false,
+    requireConfigFile: false
   },
   extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
   plugins: [],
@@ -15,8 +15,8 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['default', 'index', 'create'],
-      },
-    ],
-  },
+        ignores: ['default', 'index', 'create', 'error']
+      }
+    ]
+  }
 }

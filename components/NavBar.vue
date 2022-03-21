@@ -3,7 +3,7 @@
     <nuxt-link to="/" class="brand"> Real World Events </nuxt-link>
     <nav class="nav">
       <nuxt-link to="/" class="nav-item">List</nuxt-link> |
-      <nuxt-link to="/create" class="nav-item">Create</nuxt-link>
+      <nuxt-link to="/event/create" class="nav-item">Create</nuxt-link>
     </nav>
   </div>
 </template>
