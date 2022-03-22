@@ -47,7 +47,7 @@ hr {
   overflow: visible;
 }
 a {
-  color: #39b982;
+  background-color: #39b982;
   font-weight: 600;
   background-color: transparent;
 }
@@ -98,6 +98,7 @@ small {
 }
 .eyebrow {
   font-size: 20px;
+  color: #39b982;
 }
 .-text-primary {
   color: #39b982;
@@ -258,5 +259,9 @@ select::ms-expand {
 }
 .errorMessage {
   color: red;
+}
+
+span {
+  color: #39b982;
 }
 </style>

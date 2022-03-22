@@ -1,9 +1,9 @@
 <template>
   <div class="nav">
     <nuxt-link to="/" class="brand"> Real World Events </nuxt-link>
-    <nav class="nav">
-      <nuxt-link to="/" class="nav-item">List</nuxt-link> |
-      <nuxt-link to="/event/create" class="nav-item">Create</nuxt-link>
+    <nav>
+      <nuxt-link to="/">List</nuxt-link> |
+      <nuxt-link to="/event/create">Create</nuxt-link>
     </nav>
   </div>
 </template>
@@ -30,8 +30,11 @@
 .nav .nav-item.nuxt-link-exact-active {
   color: #39b982;
   border-bottom: solid 2px #39b982;
+  background-color: #39b982;
 }
+
 .nav a {
   display: inline-block;
+  color: #39b982;
 }
 </style>
