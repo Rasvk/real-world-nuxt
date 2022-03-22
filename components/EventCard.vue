@@ -26,12 +26,10 @@ export default {
 </script>
 <style scoped>
 div {
-  border: solid 1px;
   padding: 20px;
   margin-bottom: 24px;
   transition: all 0.2s linear;
   cursor: pointer;
-  border-color: #39b982;
 }
 div:hover {
   transform: scale(1.01);
@@ -43,9 +41,5 @@ div:hover {
 }
 a {
   text-decoration: none;
-}
-span {
-  font-weight: 100;
-  color: #39b982;
 }
 </style>

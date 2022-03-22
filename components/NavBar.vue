@@ -2,11 +2,12 @@
   <div class="nav">
     <nuxt-link to="/" class="brand"> Real World Events </nuxt-link>
     <nav>
-      <nuxt-link to="/">List</nuxt-link> |
-      <nuxt-link to="/event/create">Create</nuxt-link>
+      <nuxt-link to="/"> List </nuxt-link> |
+      <nuxt-link to="/event/create"> Create </nuxt-link>
     </nav>
   </div>
 </template>
+
 <style scoped>
 .brand {
   font-family: 'Montserrat', sans-serif;
@@ -27,14 +28,12 @@
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
-.nav .nav-item.nuxt-link-exact-active {
+.nav .nav-item.router-link-exact-active {
   color: #39b982;
   border-bottom: solid 2px #39b982;
-  background-color: #39b982;
 }
 
 .nav a {
   display: inline-block;
-  color: #39b982;
 }
 </style>

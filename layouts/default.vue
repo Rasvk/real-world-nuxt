@@ -1,29 +1,33 @@
 <template>
   <div id="app">
-    <NavBar></NavBar>
-    <Nuxt />
+    <nav-bar />
+    <nuxt />
   </div>
 </template>
+
 <script>
 import NavBar from '~/components/NavBar.vue'
 export default {
   components: {
     NavBar
   },
-  head: {
-    titleTemplate: '%s - Real World Events',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          'Where you can find all the events taking place in your neighborhood'
-      }
-    ]
+  head() {
+    return {
+      titleTemplate: '%s - Real World Events',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Where you can find all the events taking place in your neighborhood'
+        }
+      ]
+    }
   }
 }
 </script>
-<style scoped>
+
+<style>
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -47,7 +51,7 @@ hr {
   overflow: visible;
 }
 a {
-  background-color: #39b982;
+  color: #39b982;
   font-weight: 600;
   background-color: transparent;
 }
@@ -98,7 +102,6 @@ small {
 }
 .eyebrow {
   font-size: 20px;
-  color: #39b982;
 }
 .-text-primary {
   color: #39b982;
@@ -259,9 +262,5 @@ select::ms-expand {
 }
 .errorMessage {
   color: red;
-}
-
-span {
-  color: #39b982;
 }
 </style>
