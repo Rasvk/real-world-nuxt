@@ -1,3 +1,4 @@
+import EventService from './services/EventService.js'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -41,9 +42,19 @@ export default {
     baseURL: '/'
   },
 
+  target: 'static',
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  mode: 'spa',
   loadingIndicator: { name: 'circle', color: '#39b982', background: '#ffffff' },
-  loading: { color: '#39b982', height: '5px', throttle: 0 }
+  loading: { color: '#39b982', height: '5px', throttle: 0 },
+  generate: {
+    routes: () => {
+      return EventService.getEvents().then((response) => {
+        return response.data.map((event) => {
+          return '/event/' + event.id
+        })
+      })
+    }
+  }
 }
